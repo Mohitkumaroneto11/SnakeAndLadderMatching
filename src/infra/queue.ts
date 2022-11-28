@@ -16,9 +16,9 @@ export enum MSG_STATUS {
 export class RabbitMQ {
     private _connection: Connection
     private _channel: Channel
-    private GAME_JOIN_QUEUE = 'oneto11-queue-NewLudoJoinGame'
-    private WINNING_GAME_QUEUE = 'oneto11-queue-DeclareLudoResult'
-    private LOG_GAME_QUEUE = 'oneto11-queue-CreateLudoEventLog'
+    private GAME_JOIN_QUEUE = 'oneto11-queue-NewSnakeAndLadderJoinGame'
+    private WINNING_GAME_QUEUE = 'oneto11-queue-DeclareSnakeAndLadderResult'
+    private LOG_GAME_QUEUE = 'oneto11-queue-CreateSnakeAndLadderEventLog'
 
     public constructor() {
         this.setupConnection()
