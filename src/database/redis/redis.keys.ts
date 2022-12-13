@@ -1,5 +1,6 @@
+import 'dotenv/config'
 export class RedisKeys {
-    static NODE_ENV = 'ludov2'
+    static NODE_ENV = process.env.NODE_ENV
 
     public static getENVType(){
         if(process.env.IS_PROD == 'true'){
